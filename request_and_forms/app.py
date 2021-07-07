@@ -1,4 +1,5 @@
-from flask import Flask, render_template, request
+#import request from flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
@@ -35,7 +36,8 @@ def message():
 
 
 ####-----------------------STEP 3: GET and POST using same endpoint---------------------------------###
-# @app.route('/', methods=["GET","POST"])
+### Pass methods in app.route
+# @app.route('/')
 # def index():
 #     if request.method == "GET":
 #         return render_template("form.html")
